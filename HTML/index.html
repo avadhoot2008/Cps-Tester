@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--Bootstrap cdn link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/main.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="grid-container">
+
+    <div class="lenghtInput border">
+      <div class="container d-flex">
+        <label>How long do you want to click?</label>
+          <div class="input-group m-3" style="width: 50%;">
+            <input type="number" min="1" id="cpsLengthInput" placeholder="length of timer in" class="form-control">
+            <span class="input-group-text">seconds</span> 
+          </div> 
+      </div>    
+    </div>
+
+    <div class="resultsOutput border d-flex container">
+      <p>wow youre cps is <span id="cps">0</span>!!!!</p>
+    </div>
+
+    <input type="button" id="ClickArea" style="pointer-events:none;" onclick="cpsCount();">
+
+    <button id="startButton" onclick="btnScript();">Start!</button>
+
+    <div class="Leaderboard"></div>
+
+    <div class="changeColorContainer border container d-flex justify-content-center">
+
+      <label>What color do you want as the ClickArea Background?</label>
+
+      <div class="container d-flex flex-row">
+        
+        <div class="form-check form-check-inline" onclick="bgWhite();">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" id="white" checked >
+          <label class="form-check-label" for="inlineRadio1">White</label>
+        </div>
+
+        <div class="form-check form-check-inline" onclick="bgBlack();">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" id="Black">
+          <label class="form-check-label" for="inlineRadio2">Black</label>
+        </div>
+
+        <div class="form-check form-check-inline" id="BluePurple" onclick="bgBP();">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"  >
+          <label class="form-check-label" for="inlineRadio3">Blue/Purple</label>
+        </div>
+
+        <div class="form-check form-check-inline" onclick="bgPog();">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" id="pog" >
+          <label class="form-check-label" for="inlineRadio4">pog</label>
+        </div>
+
+      </div> 
+
+    </div>
+  </div>
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+}
+//if u want something to disaper just give it the class "none"
+.none{
+  display: none; 
+}
+
+.border{
+  border: 2px grey solid;
+}
+
+/*///////////////*/
+/*     GRID      */
+/*///////////////*/
+
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+}
+
+.lenghtInput { grid-area: 2 / 2 / 3 / 4; }
+
+.resultsOutput { grid-area: 2 / 4 / 3 / 6; }
+
+#ClickArea { grid-area: 4 / 2 / 7 / 6; }
+
+#startButton { grid-area: 5 / 3 / 6 / 5; }
+
+.Leaderboard { grid-area: 8 / 2 / 9 / 6; }
+
+.changeColorContainer { grid-area: 8 / 4 / 9 / 6; }
+
+
+
